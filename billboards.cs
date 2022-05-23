@@ -286,7 +286,6 @@ function AVBillboards::Load(%group,%client,%pos)
 		dataBlock = "BillboardMount";
 		position = vectorAdd(%pos,"0 10 0");
 	};
-	talk(%loadingMount);
 
 	%loadingMount.setDamageLevel(10000);
 	
