@@ -303,6 +303,8 @@ function AVBillboards::Load(%group,%client,%pos)
 	}
 
 	%group.loadedClient = %client;
+
+	return %group;
 }
 
 function AVBillboards::FinishLoad(%group)
