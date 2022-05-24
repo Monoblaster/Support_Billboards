@@ -5,6 +5,7 @@ datablock CameraData(BillboardLoadingCamera)
 function BillboardLoadingCamera::OnTrigger(%data,%camera,%triggerNum,%triggerVal)
 {
 	%group = %camera.loading;
+	%client = %group.loadedClient;
 	
 	if(isObject(%group))
 	{
